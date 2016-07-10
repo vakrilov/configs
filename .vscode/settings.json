@@ -1,0 +1,12 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontSize": 12,
+    "editor.wrappingColumn": 0,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        "**/*.js.map": true,
+        "**/*.js": { "when": "$(basename).ts" }
+    }
+}
