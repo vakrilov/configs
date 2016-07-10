@@ -1,0 +1,8 @@
+.npmignore
+
+*.tgz
+*.ts
+!*.d.t
+*.js.map
+
+tsconfig.json
