@@ -1,0 +1,41 @@
+[user]
+	name = vakrilov
+	email = alexander.vakrilov@gmail.com
+
+[push]
+  default = tracking
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%cr]%Creset (%an) %s
+
+[alias]
+  c = commit -m
+  ch = cherry-pick
+  co = checkout
+  a = add
+  d = diff
+  dic = diff --cached
+  ps = push
+  s = status
+  out = log origin..HEAD
+  qpl = log --pretty=\"%Cblue%h%Creset %Cgreen[%cr]%Creset %s\" origin/production..origin/master
+  l = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %Cblue%an%Creset' --abbrev-commit --date=relative
+  ci = commit
+  ca = commit --amend
+  catchup = "!git fetch origin; git rebase origin/master"
+  sync = "!git pl && git push"
+  # Alternate log display from Scott Chacon
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  sub = submodule update --init
+
+  # Other
+  unstage = reset HEAD
+  staged = diff --cached
+  unstaged = diff
+
+[branch]
+  autosetuprebase = always
