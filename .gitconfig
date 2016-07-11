@@ -1,6 +1,6 @@
 [user]
-	name = vakrilov
-	email = alexander.vakrilov@gmail.com
+  name = vakrilov
+  email = alexander.vakrilov@telerik.com
 
 [push]
   default = tracking
@@ -22,20 +22,16 @@
   ps = push
   s = status
   out = log origin..HEAD
-  qpl = log --pretty=\"%Cblue%h%Creset %Cgreen[%cr]%Creset %s\" origin/production..origin/master
   l = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %Cblue%an%Creset' --abbrev-commit --date=relative
-  ci = commit
   ca = commit --amend
   catchup = "!git fetch origin; git rebase origin/master"
-  sync = "!git pl && git push"
-  # Alternate log display from Scott Chacon
-  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+
   sub = submodule update --init
+  cl = clean -xfd
 
   # Other
   unstage = reset HEAD
   staged = diff --cached
-  unstaged = diff
 
 [branch]
   autosetuprebase = always
