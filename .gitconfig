@@ -3,7 +3,7 @@
   email = alexander.vakrilov@telerik.com
 
 [push]
-  default = tracking
+  default = current
 
 [color]
   diff = auto
@@ -21,11 +21,9 @@
   dic = diff --cached
   ps = push
   s = status
-  out = log origin..HEAD
-  l = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %Cblue%an%Creset' --abbrev-commit --date=relative
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %Cblue%an%Creset' --abbrev-commit --date=relative --all 
+  lb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %Cblue%an%Creset' --abbrev-commit --date=relative 
   ca = commit --amend
-  catchup = "!git fetch origin; git rebase origin/master"
-
   sub = submodule update --init
   cl = clean -xfd
 
