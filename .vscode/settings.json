@@ -2,13 +2,6 @@
 {
     "workbench.welcome.enabled": false,
     "explorer.openEditors.visible": 0,
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/node_modules/tns-core-modules": false,
-        "**/node_modules/nativescript-angular": false,
-        "**/bower_components": true,
-        "**/platforms": true
-    },
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -36,24 +29,29 @@
         "Livesync",
         "Semibold",
         "Subview",
+        "Truthy",
         "autocapitalization",
         "cocoapod",
         "codelyzer",
         "componentless",
         "containee",
+        "dasherize",
         "devtools",
         "entrypoint",
         "flexbox",
         "geolocation",
         "interop",
+        "leproj",
         "lifecycle",
         "minimap",
         "monospace",
+        "ngrx",
         "ngtools",
         "polyfills",
         "repo",
         "scrollable",
         "signup",
+        "stacklayout",
         "subviews",
         "superview",
         "testsuite",
@@ -64,12 +62,23 @@
     "typescript.implementationsCodeLens.enabled": true,
     "workbench.iconTheme": "vscode-great-icons",
     "typescript.check.tscVersion": false,
-    "editor.wordWrap": "on",
+    "editor.wordWrap": "off",
     "terminal.external.osxExec": "iTerm.app",
     "editor.showFoldingControls": "always",
     "editor.multiCursorModifier": "ctrlCmd",
     "extensions.ignoreRecommendations": true,
     "prettier.tabWidth": 4,
     "prettier.trailingComma": "es5",
-    "prettier.printWidth": 120
+    "prettier.printWidth": 120,
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.quickSuggestions": false
+    },
+    "telemetry.enableTelemetry": false,
+    "nativescript.analytics.enabled": true,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.hovers.currentLine.over": "annotation",
+    "breadcrumbs.enabled": true
 }
