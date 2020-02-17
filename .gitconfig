@@ -1,6 +1,6 @@
 [user]
   name = vakrilov
-  email = alexander.vakrilov@telerik.com
+  email = alexander.vakrilov@gmail.com
 
 [push]
   default = current
@@ -34,3 +34,4 @@
 
 [branch]
   autosetuprebase = always
+  
