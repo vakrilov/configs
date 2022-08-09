@@ -91,7 +91,7 @@ source $ZSH/oh-my-zsh.sh
 
 RPROMPT='(%D %*)'
 
-ZSH_THEME_GIT_PROMPT_PREFIX="("
+ZSH_THEME_GIT_PROMPT_PREFIX=" ("
 ZSH_THEME_GIT_PROMPT_SUFFIX=")"
 ZSH_THEME_GIT_PROMPT_SEPARATOR="|"
 ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[magenta]%}"
@@ -103,7 +103,7 @@ ZSH_THEME_GIT_PROMPT_AHEAD="%{↑%G%}"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{…%G%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}%{✔%G%}"
 
-PROMPT='%{$fg_bold[cyan]%}%~$reset_color%} $(git_super_status):'
+PROMPT='%{$fg_bold[cyan]%}%~$reset_color%}$(git_super_status) » '
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
