@@ -72,7 +72,11 @@
     "prettier.printWidth": 120,
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
-        "editor.quickSuggestions": false
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
     },
     "telemetry.enableTelemetry": false,
     "nativescript.analytics.enabled": true,
