@@ -14,7 +14,7 @@
   pretty = %Cblue%h%Creset %Cgreen[%cr]%Creset (%an) %s
 
 [alias]
-  c = commit -m
+  cm = commit -m
   ch = cherry-pick
   co = checkout
   a = add
@@ -28,6 +28,7 @@
   ca = commit --amend
   sub = submodule update --init
   cl = clean -xfd
+  wip = reset --soft HEAD^
 
   # Other
   unstage = reset HEAD
